@@ -1,0 +1,433 @@
+.heroSection {
+    height: 100dvh;
+    width: 100%;
+    & .heroInfo {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        gap: 1rem;
+
+        & h1 {
+            color: white;
+            font-size: 3rem;
+            width: 600px;
+            margin-left: 50px;
+        }
+
+        & p {
+            width: 500px;
+            text-align: left;
+            color: white;
+            font-size: 1.2rem;
+            margin-left: 50px;            
+        }
+
+        & .btns {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 1rem;
+            margin-left: 50px;
+             
+            & button {
+                width: 200px ;
+                height: 50px;
+                border-radius: 6px;
+                background-color: #159D47;
+                font-weight: bold;
+                cursor: pointer;
+                color: white;
+                font-size: 1.1rem;
+                transition: all .3s ease-in;
+
+                &:hover {
+                    background-color: #0a692d;
+                }
+            }
+
+            & .btnOurHistory {
+                background-color: white;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.425);
+                    border: 1px solid white;
+                }
+            }
+        }
+       
+
+    }
+    @media (width<= 660px) {
+    & .heroInfo {
+
+        h1 {
+            margin-inline: auto !important;
+            width: 90vw !important;
+            font-size: 2.5rem !important;
+        }
+        p {
+            width: 90vw !important;
+            margin-inline: auto !important;
+        }
+    }
+}
+@media (width<= 577px) {
+    & .heroInfo {
+
+        h1 {
+            margin-inline: auto !important;
+            width: 90vw !important;
+            font-size: 2.3rem !important;
+        }
+        p {
+            width: 90vw !important;
+            margin-inline: auto !important;
+            font-size: 1.1rem;
+        }
+    }
+}
+}
+
+.ourVision {
+    min-height: 300px;
+    padding-block:20px ;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: #F0FDF4;
+
+    div {
+        width: 300px;
+        height: 200px;
+        text-align: center;
+
+        & .icon {
+            background-color: rgba(2, 234, 2, 0.434);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        & h2 {
+            margin-block: 10px;
+            font-weight: 600;
+        }
+
+    }
+}
+
+.categorySection {
+    overflow-x: hidden;
+    min-height: 320px;
+    padding: 20px;
+
+    & h1 {
+        color: green;
+    }
+
+    & .containerCategory {
+        margin-top: 30px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        & .category {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(128, 128, 128, 0.256);
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            margin-inline: auto;
+            overflow: hidden;
+            transition: all .3s ease-in ;
+            cursor: pointer;
+            
+            & span {
+                
+                position: absolute;
+                bottom: 10px;
+                left: 20px;
+                transition: all .5s ease-in ;
+                font-weight: 600;
+                color: white;
+
+            }
+            & .shadow {
+                transform: translate(-200px);
+                transition: all .5s ease-in ;
+                z-index: -1;
+            }
+            &:hover {
+
+                & span {
+                    transform:translatey(-60px);
+                    font-size: 1.2rem;
+                    z-index: 10;
+                }
+                 & .shadow {
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    background-color: green;
+                    border-top-right-radius: 100%;
+                    transform: translate(0px);
+                 }
+            }
+
+        }
+    }
+}
+
+.FavSeason {
+    width: 96%;
+    min-height: 300px;
+    background-color: #F0FDF4;
+    position: relative;
+    padding-inline: 20px;
+    padding-block: 30px;
+
+    & h1 {
+        color: green;
+        font-size: 2rem;
+    }
+
+    & .seeMore {
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        color: green;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all .3s ease-in;
+
+        &:hover {
+            background-color: #daffe5;
+            border: 1px solid;
+        }
+        
+    }
+
+    & .containerFavOfSeason {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        gap: 10px;
+
+        & .favOfSeason {
+            position: relative;
+            width: 290px;
+            height: 390px;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: column nowrap;
+            transition: all .3s ease-in;
+
+            & .organic {
+                position: absolute;
+                top:10px;
+                left: 10px;
+                padding-block: 5px;
+                padding-inline: 10px;
+                border-radius: 50px;
+                background-color: green;
+                color: white;
+                font-weight: 600;
+                font-size: .8rem;
+            }
+
+            & img {
+                width: 100%;
+                height: 60%;
+                border-radius: 10px 10px 0 0;
+                object-fit: cover;
+            }
+
+            & .info {
+                width: 100%;
+                height: 40%;
+                background-color: white;
+                border-radius: 0 0 10px 10px;
+                position: relative;
+
+                & .typeOfFood {
+                    opacity: .7;
+                    margin: 10px;
+                }
+
+                & h3 {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    margin: 20px 0 15px 10px;
+                }
+
+                & .price {
+                    color: black;
+                    font-weight: 600;
+                    margin-inline-start: 10px;
+
+                    & span {
+                        opacity: .6;
+                    }
+                }
+
+                & .icon {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 30px;
+                    padding: 10px;
+                    background-color: green;
+                    cursor: pointer;
+                    color: white;
+                    border-radius: 8px;
+
+                    &:hover {
+                        font-size: 1.2rem;
+                        padding: 8.9px;
+                    }
+                }
+
+                &:hover {
+                    h3 {
+                        color: green;
+                    }
+                }
+            } 
+
+            &:hover {
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.336);
+            }
+        }
+
+        
+    }
+
+}
+
+.aboutUsSection {
+    margin-block: 40px;
+    padding-inline: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+
+    & .info {
+        width: 40%;
+        
+        & h1 {
+            color: green;
+            margin-block:20px ;
+        }
+
+        & p {
+            opacity: .7;
+            text-indent: 12px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        & button {
+            width: 200px;
+            height: 50px;
+            background-color: #159D47;
+            color: white;
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all .3s ease-in;
+
+            &:hover {
+                background-color: green;
+            }
+        }
+
+    }
+
+    & img {
+        width: 45%;
+        object-fit: cover;
+        border-radius: 10px;
+
+    }
+}
+
+.inscription {
+    min-height: 400px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: green;
+    color: white;
+
+    & img {
+        width: 100%;
+        height: 390px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    & .inscriptionInfo{
+        width: 90%;
+        height: 390px;
+        padding: 10px;
+        display: flex;
+        flex-flow: column nowrap;
+
+        & h1 {
+            margin-block: 20px;
+        }
+
+        & p {
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        & ul {
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 8px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        & .containerButtons{
+            display: flex;
+            gap: 20px;
+
+            & button {
+                padding: 10px;
+                border-radius: 8px;
+                color: green;
+                background-color: white;
+                font-weight: 500;
+                border: 1px solid white;
+                cursor: pointer;
+                transition: all .3s ease-in;
+
+                &:hover {
+                    background-color: #c6c6c6;
+                }
+            }
+
+            & .btn2 {
+                color: white;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.288);
+                }
+            }
+        }
+    }
+}

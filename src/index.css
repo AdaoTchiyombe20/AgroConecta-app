@@ -1,0 +1,35 @@
+/* Fonte Poppins */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Fonte montSerrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-poppins: "Poppins", sans-serif;
+    --font-montSerrat:  "Montserrat", sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-montSerrat);
+    list-style: none;
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6, li, span {
+    font-family: var(--font-poppins);
+}
+
+p {
+    font-size: 500;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: green;
+    
+}
+
+body {
+    width: 100dvw;
+    overflow-x:hidden ;
+}
