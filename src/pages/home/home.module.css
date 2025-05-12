@@ -431,3 +431,57 @@
         }
     }
 }
+
+.depoimentsSection {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 30px;
+
+    & .containerInfo {
+        margin-block: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        & .depoiments {
+            width: 360px;
+            height: 270px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+            border: 2px solid rgba(0, 128, 0, 0.429);
+            border-radius: 10px;
+    
+            & .icon {
+                margin: 20px;
+            }
+    
+            & .text {
+                width: 90%;
+                margin-inline: auto;
+                text-align: left;
+                
+                & p {
+                    font-weight:500 ;
+                    opacity: .6;
+                    margin-bottom: 30px;
+    
+                    & strong {
+                        color: green;
+                    }
+                }
+    
+                & .nameClient {
+                    font-weight: 600;
+                    line-height: 1.2rem;
+                }
+                & .typeClient {
+                    opacity: .6;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+}

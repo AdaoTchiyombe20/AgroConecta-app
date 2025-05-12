@@ -28,6 +28,9 @@ import { LuLeaf } from "react-icons/lu";
 //importação dos icons para a seacção das incrições
 import { MdDone } from "react-icons/md";
 
+//importação dos icons para a secção dos depoimentos
+import { MdMoveToInbox } from "react-icons/md";
+
 //importação dos icons para a secção dos favoritos da estação
 import { FiShoppingCart } from "react-icons/fi";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
@@ -253,6 +256,41 @@ export default function Home() {
                         <div className={style.containerButtons}>
                             <button className={style.btn1}>Inscreva-se agora</button>
                             <button className={style.btn2}>Saiba mais</button>
+                        </div>
+                </div>
+            </section>
+            <section className={style.depoimentsSection}>
+                <h1>O que dizem os nossos clintes </h1>
+                <div className={style.containerInfo}>
+                        <div className={style.depoiments}>
+                                <MdMoveToInbox color="green" size={25} className={style.icon}/>
+                                <div className={style.text}>
+                                    <p>
+                                        Os produtos da <strong>AgroConecta</strong> são incríveis! Tudo tem um gosto muito melhor do que o que encontro no supermercado. Minha família pode realmente sentir a diferença
+                                    </p>
+                                    <h3 className={style.nameClient}>Adão João</h3>
+                                    <span className={style.typeClient} >Cliente Local</span>
+                                </div>
+                        </div>
+                        <div className={style.depoiments}>
+                                <MdMoveToInbox color="green" size={25} className={style.icon}/>
+                                <div className={style.text}>
+                                    <p>
+                                       Estou recebendo a caixa semanal da fazenda há 6 meses e isso mudou a forma como comemos. Estamos experimentando novos vegetais e a qualidade é consistentemente excelente.
+                                    </p>
+                                    <h3 className={style.nameClient}>Michael Rodriguez</h3>
+                                    <span className={style.typeClient} >Membro Assinante</span>
+                                </div>
+                        </div>
+                        <div className={style.depoiments}>
+                                <MdMoveToInbox color="green" size={25} className={style.icon}/>
+                                <div className={style.text}>
+                                    <p>
+                                        Como chef, obtenho todos os meus produtos da <strong>AgroConecta</strong>. Seu compromisso com a qualidade e práticas agrícolas sustentáveis se alinha perfeitamente com os valores do meu restaurante.
+                                    </p>
+                                    <h3 className={style.nameClient}>Chef Emma Williams</h3>
+                                    <span className={style.typeClient} >Dono de restaurante local</span>
+                                </div>
                         </div>
                 </div>
             </section>
